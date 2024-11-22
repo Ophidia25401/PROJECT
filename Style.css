@@ -1,0 +1,365 @@
+:root {
+    --foreground_color: #ffffff;
+    --background_color: #1f1e1e;
+    --Hover_color:  #104adb;
+    --Nav_Footer_Color: #000000;
+    --Header_background_Color: #525261;
+    --Button_Color:  #666666;
+    --Button_Hover: #f0f8ffaf;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background_color);
+    color: var(--foreground_color);
+    font-family:'Times New Roman', Times, serif, 'Times New Roman', Times, sans-serif;
+    font-size: 1.45rem;
+   
+}
+button{
+    background-color: var(--Button_Color);
+    color: var(--foreground_color);
+}
+button:hover{
+    background-color: var(--Button_Hover);
+
+}
+/*Start of Nav and Footer Stylings*/
+.navbar {
+    background-color: var(--Nav_Footer_Color) ; 
+}
+
+.navbar-nav {
+    display: flex;
+    text-align: center;
+    margin-right: 15vw;
+    font-size: 120%;
+    color: var(--foreground_color);
+}
+
+.navbar-toggler {
+    width: 20vw;
+    height: 6vh;
+}
+
+
+.navbar-toggler-icon {
+    width: 40px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--Hover_color) !important;
+}
+.Logo{
+    width: 15vw;
+}
+
+.card-footer {
+    background-color:var(--Nav_Footer_Color) !important;
+    ;
+}   
+
+.footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25vw;
+    font-size: 120%;
+    text-align: center;
+   
+}
+.footer li{
+    padding-left: 20px;
+}
+
+
+.footer a:hover  {
+    color: var(--Hover_color) !important
+}
+
+
+
+.Footer_Contact{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 120%;
+    
+  }
+.Footer_Contact li  {
+    margin-right: 5vw;
+
+  }
+.Footer_Contact address{
+    margin-top: 1vh;
+  }
+.Footer_Contact a:hover{
+    color:var(--Hover_color) !important;
+    
+}
+
+/*End of Nav and Footer Stylings*/
+
+/*Main Stylings Homepage Start*/
+.Introduction {
+    display: flex;
+    color: var(--foreground_color);
+    text-align: center;
+    margin-top: 17vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    width: 100vw;
+    font-size: 120%;
+}
+
+.Class_Options h1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Header_background_Color)
+}
+
+.Image_Containers {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.Image_Containers img {
+    margin-top: 4em;
+    border-radius: 0%;
+    width: 80%;
+    
+}
+
+.Image_Text {
+    text-align: center;
+    color: var(--foreground_color);
+
+}
+.Learn_More{
+    height: 70px;
+    padding: 0px;
+    width: 50%;
+    border-radius: 30%;
+    background-color: var(--Button_Color);
+    color: var(--foreground_color)
+}
+.Learn_More:hover{
+    background-color: var(--Button_Hover);
+}
+
+
+#Image1,#Image2,#Image3{
+    margin-top: 10%;
+    
+    
+}
+
+.Membership_Homepage{
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.Membership_Homepage h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:var(--Header_background_Color);
+ 
+
+}
+
+.Membership_Homepage p{
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+}
+
+.Membership_Homepage button,a{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 30%;
+
+    
+}
+.Membership_Homepage button{
+    background-color:var(--Button_Color);
+    color: var(--foreground_color);
+}
+.Membership_Homepage button:hover{
+    background-color: var(--Button_Hover);
+
+}
+
+/*Overlay Stylings for Learn More*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    
+  }
+  
+  .overlay_content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background_color);
+    padding: 20px;
+    text-align: center;
+    max-width: 80vw;
+    color: var(--foreground_color);
+    border-radius: 20vw;
+   
+     
+  }
+ #overlayText{
+  font-size: 1.5em;   
+ }
+
+/*End of Homepage Stylings*/
+
+/*FAQ Stylings */
+.FAQ_Header{
+    margin-top: 25vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Header_background_Color);}
+.Subheading{
+    margin-top: 8vh;
+    text-align: center;
+    text-decoration: underline;
+}
+.sub_subheading{
+    text-align: center;
+    margin-top: 3vw;
+    font-weight: bold;
+}
+
+.Info_Paragraph{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5em;
+    width: 40vw;
+    margin-left: 30vw;
+}
+/* Timetable Styling*/
+.table{
+    margin-top: 6vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+.Timetable_header{
+    margin-top: 30vh;
+    text-align: center;
+    background-color: var(--Header_background_Color);
+}
+.Timetable_Info{
+    text-align: center;
+    margin-top: 11vh;
+    width: 80%;
+    margin-left: 10vw;
+    
+}
+/*Facilaitees styling*/
+.Facilities_header{
+    text-align: center;
+    background-color: var(--Header_background_Color);
+    margin-top: 10vh;
+}
+
+.carousel-item{
+    margin-left: 26vw;
+    width: 50vw;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/*Stylings For screens 992px or less*/
+@media (max-width:750px) {
+    body{
+        font-size: 125%;
+        overflow-x: hidden;
+    }
+    .Image_Containers img {
+        height: 60%;
+        width: 80%;
+        padding-bottom: 40px;
+    }
+    
+    .navbar-toggler {
+        margin-right: 10%;
+
+        width: 20vw;
+    }
+    
+    .Logo {
+        height: 100px;
+        width: 28vw;
+
+    }
+
+    
+    .navbar-nav {
+        text-align: center;
+        margin-right: 2vw;
+      
+    }
+    .left-list, .right-list {
+        width: 50%;
+      }
+
+    
+    .footer {
+        font-size: 70%;
+        margin-right: 25vw;
+      }
+    
+    .Footer_Contact{
+        font-size: 70%;
+        
+      }
+    .Footer_Contact address{
+        margin-top: 5px;
+    }
+
+    .Learn_More{
+        font-size: 100%;
+        width: 70%;
+        text-align: center;
+      }
+    .Image_Containers{
+        grid-template-columns: auto ;
+      
+      }
+    .Introduction{
+        margin-top: 11vh;
+    }
+    .table{
+        font-size: 50%;
+    }
+    .Membership_Homepage p{
+        font-size: 80%;
+    }
+    .Timetable_header{
+        margin-top: 11vh;
+    }
+    }
+
+  /*End of Styling for screens 992px or less*/
